@@ -1,0 +1,25 @@
+.exigo-1 {
+    max-width: 53%;
+    border-radius: 0;
+    float: right;
+}
+
+* {
+    color: #008d8d !important;
+}
+
+.text-align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+    margin-left: -20%;
+    color: #ffffff;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 880px;
+}
