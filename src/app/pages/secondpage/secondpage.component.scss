@@ -1,5 +1,5 @@
 .exigo-1 {
-    max-width: 55%;
+    max-width: 30%;
     border-radius: 0;
     float: left;
     margin-left: -40px;
@@ -11,11 +11,43 @@
 
 .exigo-title {
     font-size: 8em;
-    text-transform: uppercase;
     font-family: TruenoFont !important;
 }
 
 .text-align {
     margin-top: 250px;
     margin-left: -40px;
+}
+
+.align-left {
+    text-align: right;
+}
+
+.details-card {
+    padding: 12px 16px;
+    border: 1px dashed #dad5e3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    float: right;
+    margin-right: -15px;
+    margin-left: 40px;
+}
+
+.about-post {
+    padding: 12px 16px;
+    border: 1px dashed #dad5e3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.title {
+    color: #008d8d !important;
+    font-family: TruenoFont !important;
+    margin-bottom: 70px;
 }

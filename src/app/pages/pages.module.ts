@@ -25,6 +25,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FirstpageComponent } from './firstpage/firstpage.component';
 import { SecondpageComponent } from './secondpage/secondpage.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   imports: [
@@ -53,7 +54,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     FooterComponent,
     FirstpageComponent,
     SecondpageComponent,
-    NavbarComponent
+    NavbarComponent,
+    TeamComponent
   ],
   exports: [
     IndexComponent,
