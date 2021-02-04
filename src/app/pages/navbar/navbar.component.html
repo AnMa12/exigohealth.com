@@ -4,11 +4,10 @@
     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand"
-               placement="bottom"
                [routerLink]="['/home']"
-               target="_blank"
+               placement="bottom"
                tooltip="Designed and Coded by Creative Tim">
-                Exigo
+                <span> Exigo </span>
             </a>
             <button aria-controls="navigation-index"
                     aria-label="Toggle navigation"
@@ -27,7 +26,7 @@
              id="navigation">
             <div class="navbar-collapse-header">
                 <div class="row">
-                    <div class="col-6 collapse-brand"><a> BLK• </a></div>
+                    <div class="col-6 collapse-brand"><a> Exigo </a></div>
                     <div class="col-6 collapse-close text-right">
                         <button aria-controls="navigation-index"
                                 aria-label="Toggle navigation"
@@ -72,33 +71,13 @@
                         <p class="d-lg-none d-xl-none">Instagram</p>
                     </a>
                 </li>
-                <li class="dropdown nav-item" dropdown>
-                    <a class="dropdown-toggle nav-link dropdown-toggle"
-                       data-toggle="dropdown"
-                       dropdownToggle
-                       href="javascript:void(0)">
-                        <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Getting started
-                    </a>
-                    <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
-                        <a class="dropdown-item"
-                           href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/overview">
-                            <i class="tim-icons icon-paper"> </i> Documentation
-                        </a>
-                        <a class="dropdown-item" [routerLink]="['/register']">
-                            <i class="tim-icons icon-bullet-list-67"> </i> Register Page
-                        </a>
-                        <a class="dropdown-item" [routerLink]="['/landing']">
-                            <i class="tim-icons icon-image-02"> </i> Landing Page
-                        </a>
-                        <a class="dropdown-item" [routerLink]="['/profile']">
-                            <i class="tim-icons icon-single-02"> </i> Profile Page
-                        </a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/home']"> Back to Kit </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-default d-none d-lg-block"
-                       href="javascript:void(0)">
-                        <i class="tim-icons icon-cloud-download-93"> </i> Download
+                    <a class="nav-link"
+                       href="https://github.com/creativetimofficial/blk-design-system-angular/issues">
+                        Have an issue?
                     </a>
                 </li>
             </ul>
