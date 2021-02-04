@@ -24,6 +24,7 @@ import { LandingpageComponent } from "./examples/landingpage/landingpage.compone
 import { FooterComponent } from './footer/footer.component';
 import { FirstpageComponent } from './firstpage/firstpage.component';
 import { HeaderComponent } from './header/header.component';
+import { SecondpageComponent } from './secondpage/secondpage.component';
 
 @NgModule({
   imports: [
@@ -51,7 +52,8 @@ import { HeaderComponent } from './header/header.component';
     LandingpageComponent,
     FooterComponent,
     FirstpageComponent,
-    HeaderComponent
+    HeaderComponent,
+    SecondpageComponent
   ],
   exports: [
     IndexComponent,

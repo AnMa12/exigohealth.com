@@ -1,1 +1,9 @@
 
+@font-face {
+    font-family: TruenoFont;
+    src: url(../assets/fonts/truenobd.otf);
+}
+
+* {
+    font-family: TruenoFont;
+}
