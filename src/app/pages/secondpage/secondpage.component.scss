@@ -11,8 +11,15 @@
 
 .exigo-title {
     font-size: 8em;
+    margin-left: -5px;
+    text-transform: uppercase;
     font-family: TruenoFont !important;
 }
+
+* {
+    color: #008d8d !important;
+}
+
 
 .text-align {
     margin-top: 250px;

@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\pages",
-    "\\src\\app\\pages\\examples",
-    "\\src\\app\\pages\\examples\\profilepage",
-    "\\src\\app\\pages\\firstpage",
-    "\\src\\app\\pages\\index",
-    "\\src\\app\\pages\\navbar",
-    "\\src\\app\\pages\\team"
+    "\\src\\app\\pages\\footer",
+    "\\src\\app\\pages\\productspage",
+    "\\src\\app\\pages\\secondpage",
+    "\\src\\app\\pages\\visionpage",
+    "\\src\\assets",
+    "\\src\\assets\\img"
   ],
-  "SelectedNode": "\\src\\app\\pages\\firstpage\\firstpage.component.html",
+  "SelectedNode": "\\src\\app\\pages\\secondpage\\secondpage.component.html",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,24 @@
+<div class="page-header header-filter">
+    <div class="container">
+        <div class="text-align brand">
+            <h1 class="exigo-title">Products</h1>
+            <h3>We develop software and hardware products to enhance the physical rehabilitation proces</h3>
+ 
+
+            <div class="row">
+                <div class="col-6">
+                    <img class="product-image" [src]="digital_pta_image_src"
+                         (mouseover)="digital_pta_image_src = '../assets/img/digital-pta-image-white.png'"
+                         (mouseout)="digital_pta_image_src = '../assets/img/digital-pta-image-green.png'">
+                    <h3 class="product-tile">Our digital physical therapist assistant</h3>
+                </div>
+                <div class="col-6">
+                    <img class="product-image" [src]="orthosis_image_src" 
+                         (mouseover)="orthosis_image_src = '../assets/img/orthosis-image-white.png'"
+                         (mouseout)="orthosis_image_src = '../assets/img/orthosis-image-green.png'">
+                    <h3 class="product-tile">Our portable motoried orhtosis</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
