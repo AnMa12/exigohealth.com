@@ -28,6 +28,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TeamComponent } from './team/team.component';
 import { VisionpageComponent } from './visionpage/visionpage.component';
 import { ProductspageComponent } from './productspage/productspage.component';
+import { FeaturesPageComponent } from './features-page/features-page.component';
+import { BenefitsPageComponent } from './benefits-page/benefits-page.component';
 
 @NgModule({
   imports: [
@@ -59,7 +61,9 @@ import { ProductspageComponent } from './productspage/productspage.component';
     NavbarComponent,
     TeamComponent,
     VisionpageComponent,
-    ProductspageComponent
+    ProductspageComponent,
+    FeaturesPageComponent,
+    BenefitsPageComponent
   ],
   exports: [
     IndexComponent,

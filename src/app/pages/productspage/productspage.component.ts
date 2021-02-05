@@ -7,13 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductspageComponent implements OnInit {
 
-  digital_pta_image_src = '../assets/img/digital-pta-image-green.png'
-  orthosis_image_src = '../assets/img/orthosis-image-green.png'
+    digital_pta_image_src = '../assets/img/digital-pta-image-green.png'
+    orthosis_image_src = '../assets/img/orthosis-image-green.png'
+
+    product_details = false
+
+    constructor() { }
+
+    ngOnInit(): void {
+
+    }
 
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    change_product() {
+        this.product_details = !this.product_details 
+        this.digital_pta_image_src = '../assets/img/digital-pta-image-green.png'
+        this.orthosis_image_src = '../assets/img/orthosis-image-green.png'
+    }
 }
