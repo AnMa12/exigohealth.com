@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VisionpageComponent } from './visionpage.component';
+import { VisionPageComponent } from './vision-page.component';
 
-describe('VisionpageComponent', () => {
-  let component: VisionpageComponent;
-  let fixture: ComponentFixture<VisionpageComponent>;
+describe('VisionPageComponent', () => {
+    let component: VisionPageComponent;
+    let fixture: ComponentFixture<VisionPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VisionpageComponent ]
+        declarations: [VisionPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VisionpageComponent);
+      fixture = TestBed.createComponent(VisionPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

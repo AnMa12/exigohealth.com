@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import Typewriter from 't-writer.js'
 
 @Component({
-  selector: 'app-firstpage',
-  templateUrl: './firstpage.component.html',
-  styleUrls: ['./firstpage.component.scss']
+    selector: 'app-home-page',
+    templateUrl: './home-page.component.html',
+    styleUrls: ['./home-page.component.scss']
 })
-export class FirstpageComponent implements OnInit {
+export class HomePageComponent implements OnInit {
 
     constructor() {
 
