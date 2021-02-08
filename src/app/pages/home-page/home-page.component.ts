@@ -21,7 +21,7 @@ export class HomePageComponent implements OnInit {
         })
 
         writer
-            .type('Physical rehabilitation made more enjoyable')
+            .type(' more enjoyable')
             .rest(4000)
             .remove(14)
             .type('easier')

@@ -1,16 +1,24 @@
-.exigo-weight-lifting-photo {
-    max-width: 66%;
-    border-radius: 0;
-    float: right;
-    margin-top: -217px;
-    margin-right: -117px;
-}
+/*@media only screen and (min-width: 600px) {*/
+    .exigo-weight-lifting-photo {
+        max-width: 66%;
+        border-radius: 0;
+        float: right;
+        margin-top: -217px;
+        margin-right: -117px;
+    }
 
 
-.laptop-dashboard-photo {
-    max-width: 42%;
-    border-radius: 0;
-    float: right;
-    margin-top: -390px;
-    margin-right: 175px;
+    .laptop-dashboard-photo {
+        max-width: 42%;
+        border-radius: 0;
+        float: right;
+        margin-top: -390px;
+        margin-right: 175px;
+    }
+/*}
+*/
+
+.tw {
+    margin-top: -30px;
+    font-weight: 600;
 }
