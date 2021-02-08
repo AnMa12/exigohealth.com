@@ -21,6 +21,16 @@ import { IndexComponent } from "./index/index.component";
 import { ProfilepageComponent } from "./examples/profilepage/profilepage.component";
 import { RegisterpageComponent } from "./examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
+import { FooterComponent } from './footer/footer.component';
+import { FirstpageComponent } from './firstpage/firstpage.component';
+import { SecondpageComponent } from './secondpage/secondpage.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { TeamComponent } from './team/team.component';
+import { VisionpageComponent } from './visionpage/visionpage.component';
+import { ProductspageComponent } from './productspage/productspage.component';
+import { FeaturesPageComponent } from './features-page/features-page.component';
+import { BenefitsPageComponent } from './benefits-page/benefits-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 @NgModule({
   imports: [
@@ -45,7 +55,17 @@ import { LandingpageComponent } from "./examples/landingpage/landingpage.compone
     IndexComponent,
     ProfilepageComponent,
     RegisterpageComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    FooterComponent,
+    FirstpageComponent,
+    SecondpageComponent,
+    NavbarComponent,
+    TeamComponent,
+    VisionpageComponent,
+    ProductspageComponent,
+    FeaturesPageComponent,
+    BenefitsPageComponent,
+    ContactPageComponent
   ],
   exports: [
     IndexComponent,

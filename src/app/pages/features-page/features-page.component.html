@@ -1,0 +1,20 @@
+<div style="height: 80vh;">
+    <div class="container">
+        <div class="text-align brand">
+            <h1 class="exigo-title">Features</h1>
+            <div class="row">
+                <div *ngFor="let feature of features_list" class="col-md-3 feature-card">
+                    <div class="testimonial-post">
+                        <span class="quote">
+                            <span class="la la-quote-right">{{feature.icon}}</span>
+                        </span>
+                        <h2>{{feature.title}}</h2>
+                        <p>{{feature.content}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

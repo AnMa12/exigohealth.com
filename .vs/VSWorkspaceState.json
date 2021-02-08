@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\examples",
+    "\\src\\app\\pages\\examples\\profilepage",
+    "\\src\\app\\pages\\features-page",
+    "\\src\\app\\pages\\firstpage",
+    "\\src\\app\\pages\\footer",
+    "\\src\\app\\pages\\navbar",
+    "\\src\\app\\pages\\team"
+  ],
+  "SelectedNode": "\\src\\app\\pages\\firstpage\\firstpage.component.scss",
+  "PreviewInSolutionExplorer": false
+}

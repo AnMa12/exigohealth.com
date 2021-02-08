@@ -1,0 +1,64 @@
+.exigo-title {
+    font-size: 5em;
+    margin-left: -5px;
+    text-transform: uppercase;
+    font-family: TruenoFont !important;
+}
+
+* {
+    color: #008d8d !important;
+}
+
+.text-align {
+    margin-left: -40px;
+}
+
+.feature-card {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.quote {
+    margin-top: -35px;
+
+    width: 70px;
+    height: 70px;
+
+    display: inline-block;
+    background: #008d8d;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 70px;
+}
+
+
+.testimonial-post {
+    width: 320px;
+    margin: 100px 0;
+    padding: 0 30px 40px;
+    border: 1px solid #ededf9;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 7px 15px rgb(0 0 0 / 5%);
+    -webkit-box-shadow: 0 7px 15px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.05);
+}
+
+.la {
+    color: white !important;
+    display: inline-block;
+}

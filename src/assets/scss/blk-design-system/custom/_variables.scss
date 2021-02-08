@@ -95,13 +95,15 @@ $default-color-opacity: rgba(182, 182, 182, 0.6) !default;
 $orange-color: #f96332 !default;
 
 $default: #344675 !default;
-$primary: #e14eca !default;
+$primary: #008d8d !default;
 $secondary: #f4f5f7 !default;
 $success: #00f2c3 !default;
 $info: #1d8cf8 !default;
 $warning: #ff8d72 !default;
-$danger: #fd5d93 !default;
+/*$danger: #fd5d93 !default;*/
+$danger: #008d8d !default;
 $black: #222a42 !default;
+$exigo: #008d8d !default;
 
 // gradient
 $default-states: #263148 !default;
@@ -109,7 +111,7 @@ $primary-states: #ba54f5 !default;
 $success-states: #0098f0 !default;
 $info-states: #3358f4 !default;
 $warning-states: #ff6491 !default;
-$danger-states: #ec250d !default;
+$danger-states: #008d8d !default;
 $black-states: #1d253b !default;
 
 $background-black: #171941 !default;
@@ -175,7 +177,8 @@ $theme-colors: map-merge(
     "white": $white,
     "neutral": $white,
     "dark": $dark,
-    "darker": $darker
+    "darker": $darker,
+    "exigo": $exigo,
   ),
   $theme-colors
 );
@@ -903,7 +906,7 @@ $card-border-color: rgba($black, 0.05);
 $card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width});
 $card-cap-bg: $gray-100 !default;
 $card-bg: $white !default;
-$card-black-background: #1f2251 !default;
+$card-black-background: #008d8d !default;
 $card-img-overlay-padding: 1.25rem !default;
 
 //$card-group-margin:                 ($grid-gutter-width / 2);
