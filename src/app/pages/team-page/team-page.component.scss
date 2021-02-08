@@ -10,7 +10,12 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+    .sections-page-title {
+        text-align: center;
+        font-size: 10vw;
+    }
+
     .team-image {
         width: 50vw;
         margin-left: auto;
@@ -20,23 +25,22 @@
     }
 
     .team-card {
-        padding: 10px 0px !important;    
-    
+        padding: 10px 0px !important;
     }
 
 
-        h3 {
-            font-size: 5vw;
-            margin-bottom: 0px !important;
-        }
-
-        h4 {
-            font-size: 5vw;
-            margin-bottom: 0px !important;
-        }
-
-        p {
-            font-size: 5vw;
-            margin-bottom: 0px !important;
-        }
+    h3 {
+        font-size: 5vw;
+        margin-bottom: 0px !important;
     }
+
+    h4 {
+        font-size: 5vw;
+        margin-bottom: 0px !important;
+    }
+
+    p {
+        font-size: 5vw;
+        margin-bottom: 0px !important;
+    }
+}
