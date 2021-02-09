@@ -14,7 +14,12 @@ export class BenefitsPageComponent implements OnInit {
             content: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh, nullam mollis. Ut justo. Suspendisse potenti."
         },
         {
-            title: "Sure",
+            title: "Faster",
+            icon: "E",
+            content: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh, nullam mollis. Ut justo. Suspendisse potenti."
+        },
+        {
+            title: "Connected",
             icon: "E",
             content: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh, nullam mollis. Ut justo. Suspendisse potenti."
         },

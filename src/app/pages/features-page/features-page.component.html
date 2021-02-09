@@ -1,13 +1,12 @@
-<h1 class="sections-page-title">Features</h1>
-<div class="row">
-    <!--<div *ngFor="let feature of features_list" class="col-md-3 feature-card">
-        <div class="testimonial-post">
-            <span class="quote">
-                <span class="la la-quote-right">{{feature.icon}}</span>
-            </span>
-            <h2>{{feature.title}}</h2>
-            <p>{{feature.content}}</p>
-        </div>
-    </div>-->
+<div class="container">
+    <h1 class="sections-page-title">Features</h1>
+    <div class="row">
+        <div *ngFor="let feature of features_list" class="col-md-3 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">{{feature.title}}</h2>
+                    <p class="card-title">{{feature.content}}</p>
+                </div>
+            </div>
+    </div>
 </div>
-
