@@ -3,15 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\index",
     "\\src\\app\\pages",
     "\\src\\app\\pages\\examples",
-    "\\src\\app\\pages\\examples\\profilepage",
-    "\\src\\app\\pages\\features-page",
-    "\\src\\app\\pages\\firstpage",
-    "\\src\\app\\pages\\footer",
-    "\\src\\app\\pages\\navbar",
-    "\\src\\app\\pages\\team"
+    "\\src\\app\\pages\\team-page",
+    "\\src\\app\\pages\\vision-page",
+    "\\src\\app\\shared-components",
+    "\\src\\app\\shared-components\\footer"
   ],
-  "SelectedNode": "\\src\\app\\pages\\firstpage\\firstpage.component.scss",
+  "SelectedNode": "\\src\\app\\shared-components\\footer\\footer.component.html",
   "PreviewInSolutionExplorer": false
 }
