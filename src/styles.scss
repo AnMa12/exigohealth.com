@@ -103,3 +103,9 @@ body {
         margin: 50px 0px 35px 0px !important;
     }
 }
+
+@media (min-width: 1200px) {
+    .container {
+    max-width: 79vw !important;
+    }
+}

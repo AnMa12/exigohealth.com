@@ -1,17 +1,29 @@
-.sections-page-title {
-    text-align: right;
-}
+@media only screen and (min-width: 769px) {
+    .container {
+        height: 39vw;
+    }
 
-.vision-description {
-    text-align: right;
-}
+    .sections-page-title {
+        margin-top: 9vw;
+        text-align: right;
+    }
 
-.exigo-laptop-workout-photo {
-    max-width: 66%;
-    border-radius: 0;
-    float: left;
-    margin-left: -314px;
-    margin-top: -170px;
+    .vision-description {
+        text-align: right;
+    }
+
+    .exigo-laptop-workout-photo {
+        max-width: 66vw;
+        right: 54vw;
+        top: -10vw;
+        position: absolute;
+        z-index: -9999;
+    }
+
+    .vision-description {
+        float: right;
+        width: 43vw;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -19,5 +31,13 @@
         font-size: 5vw;
         text-align: center !important;
         margin-bottom: 0px 0px 30px 0px !important;
+    }
+
+    .exigo-laptop-workout-photo {
+        /* max-width: 66vw;
+        right: 57vw;
+        top: -1vw;
+        z-index: -9999;*/
+        display: none;
     }
 }
