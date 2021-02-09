@@ -1,3 +1,12 @@
+.title-second-line {
+    margin-bottom: 1.5vw !important;
+    font-size: 5vw;
+    margin-left: -5px;
+    margin-bottom: 5vw;
+    text-transform: uppercase;
+    font-family: TruenoFont !important;
+}
+
 @media only screen and (min-width: 769px) {
     .container {
         height: 39vw;
@@ -41,3 +50,4 @@
         display: none;
     }
 }
+

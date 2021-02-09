@@ -9,6 +9,18 @@
     text-align: center;
 }
 
+.parallax {
+    /* The image used */
+    background-image: url("/assets/img/telekineto.png");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media only screen and (max-width: 768px) {
     h3 {
         font-size: 3vw;
