@@ -1,23 +1,44 @@
+@media only screen and (min-width: 769px) {
+    .exigo-weight-lifting-photo {
+        max-width: 66%;
+        border-radius: 0;
+        float: right;
+        margin-top: -217px;
+        margin-right: -117px;
+    }
 
-.exigo-weight-lifting-photo {
-    max-width: 66%;
-    border-radius: 0;
-    float: right;
-    margin-top: -217px;
-    margin-right: -117px;
+    .home-page-title {
+        margin-top: 200px;
+    }
+
+    .laptop-dashboard-photo {
+        max-width: 42%;
+        border-radius: 0;
+        float: right;
+        margin-top: -390px;
+        margin-right: 175px;
+    }
+
+
+    .tw {
+        margin-top: -30px;
+        font-weight: 600;
+    }
 }
 
+@media only screen and (max-width: 768px) {
 
-.laptop-dashboard-photo {
-    max-width: 42%;
-    border-radius: 0;
-    float: right;
-    margin-top: -390px;
-    margin-right: 175px;
-}
+    .home-page-title {
+        margin-top: 200px;
+        font-size: 13vw;
+    }
 
+    h1, h3 {
+        text-align: center;
+    }
 
-.tw {
-    margin-top: -30px;
-    font-weight: 600;
+    .tw {
+        margin-top: -30px;
+        font-weight: 600;
+    }
 }
