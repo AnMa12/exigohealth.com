@@ -126,7 +126,7 @@
     }
 
     .product-image {
-        max-width: 67vw !important;
+        max-width: 46vh !important;
         position: absolute;
         z-index: -9999;
     }
@@ -136,11 +136,11 @@
     }
 
     .product-left-image {
-        left: -18vw;
+        left: -18vh;
     }
 
     .product-right-image {
-        right: -18vw;
+        right: -18vh;
     }
 
     .div-btn {
@@ -157,54 +157,54 @@
         font-size: 0.875rem;
         line-height: 1.35em;
         border-radius: 0.25rem;
-        height: 7vw !important;
-        padding: 2vw !important;
+        height: 7vh !important;
+        padding: 2vh !important;
         font-size: 10px !important;
     }
 
     .btn {
-        height: 7vw !important;
-        padding: 2vw !important;
+        height: 7vh !important;
+        padding: 2vh !important;
         font-size: 10px !important;
     }
 
     .product-btn {
         position: absolute;
-        top: 110vw;
+        top: 73vh;
     }
 
     .product-right-btn-white {
         color: #008d8d !important;
         background: white !important;
-        right: 11.5vw;
+        right: 11.5vh;
     }
 
     .product-right-btn-green {
         color: white !important;
         background: transparent !important;
-        right: 5.5vw;
+        right: 5.5vh;
     }
 
     .product-left-btn-white {
         color: #008d8d !important;
         background: white !important;
-        left: 9.5vw;
+        left: 9.5vh;
     }
 
     .product-left-btn-green {
         color: white !important;
         background: transparent !important;
-        left: 7vw;
+        left: 7vh;
     }
 
     .product-left-name {
         position: absolute;
         z-index: -1000;
-        font-size: 3.5vw;
+        font-size: 2vh;
         text-align: center;
-        width: 33vw;
-        top: 99vw;
-        left: 4vw;
+        width: 19vh;
+        top: 66vh;
+        left: 2vh;
         color: white !important;
         font-family: TruenoFont !important;
     }
@@ -212,11 +212,11 @@
     .product-right-name {
         position: absolute;
         z-index: -1000;
-        font-size: 3.5vw;
+        font-size: 2vh;
         text-align: center;
-        width: 36vw;
-        top: 99vw;
-        right: 3vw;
+        width: 2vh;
+        top: 66vh;
+        right: 2vh;
         color: white !important;
         font-family: TruenoFont !important;
     }
