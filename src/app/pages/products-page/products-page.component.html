@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="page-header" id="products">
     <div class="container">
         <div class="big-screens">
             <img *ngIf="!isOrthosis" class="product-image product-left-image" src="../assets/img/product-1-white.png">
@@ -30,11 +30,11 @@
 
         <div class="product-text">
             <h1 class="sections-page-title">Products</h1>
-            <h3 class="product-tile">
-                We develop software and hardware products to enhance the physical
-                rehabilitation process. We strongly believe that physical rehabilitation
-                shouldn't be a burden, just a process that helps us be healthy and
-                get back to our normal activities.
+            <h3 class="product-description">
+                Our sfotware solution is a digital physical therapist assistant that motivates you to do the recovery exercises using interactive games.
+            </h3>
+            <h3 class="product-description">
+                Our hardware solution is a smart, portable, orthosis which allows patients to continue their exercises at home, especially useful during a pandemic.
             </h3>
         </div>
 
@@ -68,4 +68,4 @@
     </div>
 </div>
 <app-features-page [isOrthosis]="isOrthosis"></app-features-page>
-<app-benefits-page [isOrthosis]="isOrthosis"></app-benefits-page>
+<!--<app-benefits-page [isOrthosis]="isOrthosis"></app-benefits-page>-->

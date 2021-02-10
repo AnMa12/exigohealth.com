@@ -1,4 +1,9 @@
 @media only screen and (min-width: 769px) {
+
+    .product-description {
+        text-align: center;
+    }
+
     .product-image {
         max-width: 48vw !important;
         position: absolute;
@@ -88,7 +93,7 @@
     .product-text {
         display: block;
         margin: auto;
-        width: 45%;
+        width: 40vw;
     }
 
     .product-left-image {
@@ -109,8 +114,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    .container {
+        padding: 5vw;
+    }
+
     h3 {
-        font-size: 3vw;
+        font-size: 4vw;
         text-align: center !important;
         margin-bottom: 0px 0px 30px 0px !important;
     }
@@ -160,14 +170,13 @@
 
     .product-btn {
         position: absolute;
-        top: 80vw;
+        top: 110vw;
     }
 
     .product-right-btn-white {
         color: #008d8d !important;
         background: white !important;
-        right: 5.5vw;
-        right: 8.5vw;
+        right: 11.5vw;
     }
 
     .product-right-btn-green {
@@ -185,7 +194,7 @@
     .product-left-btn-green {
         color: white !important;
         background: transparent !important;
-        left: 2vw;
+        left: 7vw;
     }
 
     .product-left-name {
@@ -194,7 +203,7 @@
         font-size: 3.5vw;
         text-align: center;
         width: 33vw;
-        top: 69vw;
+        top: 99vw;
         left: 4vw;
         color: white !important;
         font-family: TruenoFont !important;
@@ -206,16 +215,16 @@
         font-size: 3.5vw;
         text-align: center;
         width: 36vw;
-        top: 68.5vw;
+        top: 99vw;
         right: 3vw;
         color: white !important;
         font-family: TruenoFont !important;
     }
 
     .page-header {
-        height: 60vh !important;
-        min-height: 60vh;
-        max-height: 60vh;
+        height: 89vh;
+        min-height: 89vh;
+        max-height: 89vh;
     }
 }
 
