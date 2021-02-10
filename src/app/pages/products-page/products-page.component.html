@@ -1,33 +1,69 @@
-<div class="container">
-    
+<div class="page-header">
+    <div class="container">
+        <div class="big-screens">
+            <img *ngIf="!orthosis_product" class="product-image product-left-image" src="../assets/img/product-1-white.png">
+            <img *ngIf="!orthosis_product" class="product-image product-right-image" src="../assets/img/product-2.png">
 
-    <!--<div class="row">
-        <div class="col-6">
-            <img *ngIf="!product_details" class="product-image"
-                 src="../assets/img/digital-pta-image-white.png">
-            <img *ngIf="product_details" class="product-image" [src]="digital_pta_image_src"
-                 (mouseover)="digital_pta_image_src = '../assets/img/digital-pta-image-white.png'"
-                 (mouseout)="digital_pta_image_src = '../assets/img/digital-pta-image-green.png'"
-                 (click)="change_product()">
-            <h3 class="product-tile">Our digital physical therapist assistant</h3>
+            <img *ngIf="orthosis_product" class="product-image product-left-image" src="../assets/img/product-1.png" />
+            <img *ngIf="orthosis_product" class="product-image product-right-image" src="../assets/img/product-2-white.png">
+
+
+            <h3 class="product-left-name">Meet your digital physical therapist</h3>
+            <h3 class="product-right-name">Meet your motorized orhtosis</h3>
+
+            <div *ngIf="!orthosis_product" class="div-btn product-btn product-left-btn-green">
+                Scroll to see the features
+            </div>
+            <button *ngIf="!orthosis_product" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-right-btn-white"
+                    (click)="change_product()">
+                Click for details
+            </button>
+
+            <button *ngIf="orthosis_product" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-left-btn-white"
+                    (click)="change_product()">
+                Click for details
+            </button>
+            <div *ngIf="orthosis_product" class="div-btn product-btn product-right-btn-green">
+                Scroll to see the features
+            </div>
         </div>
-        <div class="col-6">
-            <img *ngIf="product_details" class="product-image"
-                 src="../assets/img/orthosis-image-white.png">
-            <img *ngIf="!product_details" class="product-image" [src]="orthosis_image_src"
-                 (mouseover)="orthosis_image_src = '../assets/img/orthosis-image-white.png'"
-                 (mouseout)="orthosis_image_src = '../assets/img/orthosis-image-green.png'"
-                 (click)="change_product()">
-            <h3 class="product-tile">Our portable motoried orhtosis</h3>
+
+        <div class="product-text">
+            <h1 class="sections-page-title">Products</h1>
+            <h3 class="product-tile">
+                We develop software and hardware products to enhance the physical
+                rehabilitation process. We strongly believe that physical rehabilitation
+                shouldn't be a burden, just a process that helps us be healthy and
+                get back to our normal activities.
+            </h3>
         </div>
-    </div>-->
-</div>
 
-<div class="parallax">
-    <br />
-    <br />
-    <br />
-    <h1 style="margin-bottom:85px; color: white !important" class="sections-page-title">Products</h1>
+        <div class="small-screens">
+            <img *ngIf="!orthosis_product" class="product-image product-left-image" src="../assets/img/product-1-white.png">
+            <img *ngIf="!orthosis_product" class="product-image product-right-image" src="../assets/img/product-2.png">
+
+            <img *ngIf="orthosis_product" class="product-image product-left-image" src="../assets/img/product-1.png" />
+            <img *ngIf="orthosis_product" class="product-image product-right-image" src="../assets/img/product-2-white.png">
 
 
+            <h3 class="product-left-name">Meet your digital physical therapist</h3>
+            <h3 class="product-right-name">Meet your motorized orhtosis</h3>
+
+            <div *ngIf="!orthosis_product" class="div-btn product-btn product-left-btn-green">
+                Scroll to see the features
+            </div>
+            <button *ngIf="!orthosis_product" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-right-btn-white"
+                    (click)="change_product()">
+                Click for details
+            </button>
+
+            <button *ngIf="orthosis_product" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-left-btn-white"
+                    (click)="change_product()">
+                Click for details
+            </button>
+            <div *ngIf="orthosis_product" class="div-btn product-btn product-right-btn-green">
+                Scroll to see the features
+            </div>
+        </div>
+    </div>
 </div>
