@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
     selector: 'app-products-page',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsPageComponent implements OnInit {
 
-    orthosis_product = false;
+    isOrthosis = false;
 
     constructor() { }
 
@@ -16,6 +16,6 @@ export class ProductsPageComponent implements OnInit {
     }
 
     change_product() {
-        this.orthosis_product = !this.orthosis_product 
+        this.isOrthosis = !this.isOrthosis 
     }
 }

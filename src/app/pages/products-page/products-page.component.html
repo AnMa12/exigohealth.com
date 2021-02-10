@@ -1,29 +1,29 @@
 <div class="page-header">
     <div class="container">
         <div class="big-screens">
-            <img *ngIf="!orthosis_product" class="product-image product-left-image" src="../assets/img/product-1-white.png">
-            <img *ngIf="!orthosis_product" class="product-image product-right-image" src="../assets/img/product-2.png">
+            <img *ngIf="!isOrthosis" class="product-image product-left-image" src="../assets/img/product-1-white.png">
+            <img *ngIf="!isOrthosis" class="product-image product-right-image" src="../assets/img/product-2.png">
 
-            <img *ngIf="orthosis_product" class="product-image product-left-image" src="../assets/img/product-1.png" />
-            <img *ngIf="orthosis_product" class="product-image product-right-image" src="../assets/img/product-2-white.png">
+            <img *ngIf="isOrthosis" class="product-image product-left-image" src="../assets/img/product-1.png" />
+            <img *ngIf="isOrthosis" class="product-image product-right-image" src="../assets/img/product-2-white.png">
 
 
             <h3 class="product-left-name">Meet your digital physical therapist</h3>
             <h3 class="product-right-name">Meet your motorized orhtosis</h3>
 
-            <div *ngIf="!orthosis_product" class="div-btn product-btn product-left-btn-green">
+            <div *ngIf="!isOrthosis" class="div-btn product-btn product-left-btn-green">
                 Scroll to see the features
             </div>
-            <button *ngIf="!orthosis_product" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-right-btn-white"
+            <button *ngIf="!isOrthosis" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-right-btn-white"
                     (click)="change_product()">
                 Click for details
             </button>
 
-            <button *ngIf="orthosis_product" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-left-btn-white"
+            <button *ngIf="isOrthosis" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-left-btn-white"
                     (click)="change_product()">
                 Click for details
             </button>
-            <div *ngIf="orthosis_product" class="div-btn product-btn product-right-btn-green">
+            <div *ngIf="isOrthosis" class="div-btn product-btn product-right-btn-green">
                 Scroll to see the features
             </div>
         </div>
@@ -39,31 +39,33 @@
         </div>
 
         <div class="small-screens">
-            <img *ngIf="!orthosis_product" class="product-image product-left-image" src="../assets/img/product-1-white.png">
-            <img *ngIf="!orthosis_product" class="product-image product-right-image" src="../assets/img/product-2.png">
+            <img *ngIf="!isOrthosis" class="product-image product-left-image" src="../assets/img/product-1-white.png">
+            <img *ngIf="!isOrthosis" class="product-image product-right-image" src="../assets/img/product-2.png">
 
-            <img *ngIf="orthosis_product" class="product-image product-left-image" src="../assets/img/product-1.png" />
-            <img *ngIf="orthosis_product" class="product-image product-right-image" src="../assets/img/product-2-white.png">
+            <img *ngIf="isOrthosis" class="product-image product-left-image" src="../assets/img/product-1.png" />
+            <img *ngIf="isOrthosis" class="product-image product-right-image" src="../assets/img/product-2-white.png">
 
 
             <h3 class="product-left-name">Meet your digital physical therapist</h3>
             <h3 class="product-right-name">Meet your motorized orhtosis</h3>
 
-            <div *ngIf="!orthosis_product" class="div-btn product-btn product-left-btn-green">
+            <div *ngIf="!isOrthosis" class="div-btn product-btn product-left-btn-green">
                 Scroll to see the features
             </div>
-            <button *ngIf="!orthosis_product" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-right-btn-white"
+            <button *ngIf="!isOrthosis" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-right-btn-white"
                     (click)="change_product()">
                 Click for details
             </button>
 
-            <button *ngIf="orthosis_product" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-left-btn-white"
+            <button *ngIf="isOrthosis" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-left-btn-white"
                     (click)="change_product()">
                 Click for details
             </button>
-            <div *ngIf="orthosis_product" class="div-btn product-btn product-right-btn-green">
+            <div *ngIf="isOrthosis" class="div-btn product-btn product-right-btn-green">
                 Scroll to see the features
             </div>
         </div>
     </div>
 </div>
+<app-features-page [isOrthosis]="isOrthosis"></app-features-page>
+<app-benefits-page [isOrthosis]="isOrthosis"></app-benefits-page>
