@@ -16,6 +16,7 @@ export class ProductsPageComponent implements OnInit {
     }
 
     change_product() {
-        this.isOrthosis = !this.isOrthosis 
+        console.log("pop");
+        this.isOrthosis = !this.isOrthosis;
     }
 }

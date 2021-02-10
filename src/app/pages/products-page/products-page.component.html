@@ -39,31 +39,16 @@
         </div>
 
         <div class="small-screens">
-            <img *ngIf="!isOrthosis" class="product-image product-left-image" src="../assets/img/product-1-white.png">
-            <img *ngIf="!isOrthosis" class="product-image product-right-image" src="../assets/img/product-2.png">
+            <img *ngIf="!isOrthosis" class="product-image product-left-image" src="../assets/img/dpt-white.png">
 
-            <img *ngIf="isOrthosis" class="product-image product-left-image" src="../assets/img/product-1.png" />
-            <img *ngIf="isOrthosis" class="product-image product-right-image" src="../assets/img/product-2-white.png">
+            <a (click)="change_product()">
+                <img *ngIf="!isOrthosis" class="product-image product-right-image" src="../assets/img/orthosis-green.png" (click)="change_product()">
+            </a>
 
-
-            <h3 class="product-left-name">Meet your digital physical therapist</h3>
-            <h3 class="product-right-name">Meet your motorized orhtosis</h3>
-
-            <div *ngIf="!isOrthosis" class="div-btn product-btn product-left-btn-green">
-                Scroll to see the features
-            </div>
-            <button *ngIf="!isOrthosis" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-right-btn-white"
-                    (click)="change_product()">
-                Click for details
-            </button>
-
-            <button *ngIf="isOrthosis" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-left-btn-white"
-                    (click)="change_product()">
-                Click for details
-            </button>
-            <div *ngIf="isOrthosis" class="div-btn product-btn product-right-btn-green">
-                Scroll to see the features
-            </div>
+            <a (click)="change_product()">
+                <img *ngIf="isOrthosis" class="product-image product-left-image" src="../assets/img/dpt-green.png" />
+            </a>
+            <img *ngIf="isOrthosis" class="product-image product-right-image" src="../assets/img/orthosis-white.png">
         </div>
     </div>
 </div>
