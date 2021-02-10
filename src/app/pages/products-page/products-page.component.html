@@ -40,14 +40,9 @@
 
         <div class="small-screens">
             <img *ngIf="!isOrthosis" class="product-image product-left-image" src="../assets/img/dpt-white.png">
-
-            <a (click)="change_product()">
-                <img *ngIf="!isOrthosis" class="product-image product-right-image" src="../assets/img/orthosis-green.png" (click)="change_product()">
-            </a>
-
-            <a (click)="change_product()">
-                <img *ngIf="isOrthosis" class="product-image product-left-image" src="../assets/img/dpt-green.png" />
-            </a>
+            <img *ngIf="!isOrthosis" class="product-image product-right-image" src="../assets/img/orthosis-green.png" (click)="change_product()">
+ 
+            <img *ngIf="isOrthosis" class="product-image product-left-image" src="../assets/img/dpt-green.png" (click)="change_product()"/>
             <img *ngIf="isOrthosis" class="product-image product-right-image" src="../assets/img/orthosis-white.png">
         </div>
     </div>

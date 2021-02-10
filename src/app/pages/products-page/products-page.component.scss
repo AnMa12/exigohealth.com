@@ -117,6 +117,7 @@
 
     .container {
         padding: 5vw;
+        margin-top: 3vw;
     }
 
     h3 {
@@ -126,9 +127,8 @@
     }
 
     .product-image {
-        max-width: 46vh !important;
+        max-width: 41vh !important;
         position: absolute;
-        z-index: -9999;
     }
 
     .big-screens {
@@ -136,95 +136,17 @@
     }
 
     .product-left-image {
-        left: -18vh;
+        left: -16vh;
     }
 
     .product-right-image {
-        right: -18vh;
-    }
-
-    .div-btn {
-        display: inline-block;
-        border-radius: 70px !important;
-        font-weight: 400;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        border: 1px solid transparent;
-        font-size: 0.875rem;
-        line-height: 1.35em;
-        border-radius: 0.25rem;
-        height: 7vh !important;
-        padding: 2vh !important;
-        font-size: 10px !important;
-    }
-
-    .btn {
-        height: 7vh !important;
-        padding: 2vh !important;
-        font-size: 10px !important;
-    }
-
-    .product-btn {
-        position: absolute;
-        top: 73vh;
-    }
-
-    .product-right-btn-white {
-        color: #008d8d !important;
-        background: white !important;
-        right: 11.5vh;
-    }
-
-    .product-right-btn-green {
-        color: white !important;
-        background: transparent !important;
-        right: 5.5vh;
-    }
-
-    .product-left-btn-white {
-        color: #008d8d !important;
-        background: white !important;
-        left: 9.5vh;
-    }
-
-    .product-left-btn-green {
-        color: white !important;
-        background: transparent !important;
-        left: 7vh;
-    }
-
-    .product-left-name {
-        position: absolute;
-        z-index: -1000;
-        font-size: 2vh;
-        text-align: center;
-        width: 19vh;
-        top: 66vh;
-        left: 2vh;
-        color: white !important;
-        font-family: TruenoFont !important;
-    }
-
-    .product-right-name {
-        position: absolute;
-        z-index: -1000;
-        font-size: 2vh;
-        text-align: center;
-        width: 2vh;
-        top: 66vh;
-        right: 2vh;
-        color: white !important;
-        font-family: TruenoFont !important;
+        right: -16vh;
     }
 
     .page-header {
-        height: 89vh;
-        min-height: 89vh;
-        max-height: 89vh;
+        height: 75vh;
+        min-height: 75vh;
+        max-height: 75vh;
     }
 }
 
