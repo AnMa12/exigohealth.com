@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
@@ -32,6 +32,7 @@ import { BenefitsPageComponent } from './benefits-page/benefits-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -49,6 +50,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AlertModule.forRoot(),
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
+    ModalModule.forRoot(), 
+    ReactiveFormsModule,
     ModalModule.forRoot(),
     FontAwesomeModule
   ],
