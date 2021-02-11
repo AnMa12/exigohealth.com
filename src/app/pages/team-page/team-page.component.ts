@@ -7,9 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamPageComponent implements OnInit {
 
-  constructor() { }
+    team = [
+        {
+            image: "../assets/img/team-ana.png",
+            name: "Ana-Maria Melinte",
+            role: "CEO",
+            mail: "anma.melinte@gmail.com"
+        },
+        {
+            image: "../assets/img/team-irina.png",
+            name: "Irina Sargu",
+            role: "COO",
+            mail: "irina.s.sargu@gmail.com"
+        },
+        {
+            image: "../assets/img/team-ioana.png",
+            name: "Ioana Ciripan",
+            role: "CTO",
+            mail: "ioanarciripan@gmail.com"
+        },
+    ]
 
-  ngOnInit(): void {
-  }
+    constructor() {
+
+    }
+
+    ngOnInit(): void {
+
+    }
 
 }

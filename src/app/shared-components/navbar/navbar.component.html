@@ -4,9 +4,8 @@
     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand"
-               [routerLink]="['/home']"
                placement="bottom"
-               tooltip="Designed and Coded by Creative Tim">
+               (click)="scroll('homepage')">
                 <span> Exigo </span>
             </a>
             <button aria-controls="navigation-index"
@@ -41,26 +40,31 @@
                 </div>
             </div>
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li (click)="scroll('vision')" class="nav-item">
+                    <a class="nav-link">
+                        Vision
+                    </a>
+                </li>
+                <li (click)="scroll('products')" class="nav-item">
                     <a class="nav-link">
                         Products
                     </a>
                 </li>
-                <li class="nav-item">
+                <li (click)="scroll('features')" class="nav-item">
                     <a class="nav-link">
                         Features
                     </a>
                 </li>
-                <li class="nav-item">
+                <li (click)="scroll('team')" class="nav-item">
                     <a class="nav-link">
-                        Our Team
+                        Team
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link">
-                        Contact us
-                    </a>
-                </li>
+                <!--<li (click)="scroll('contact')" class="nav-item">
+        <a class="nav-link">
+            Contact us
+        </a>
+    </li>-->
             </ul>
         </div>
     </div>

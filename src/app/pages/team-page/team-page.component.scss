@@ -8,13 +8,33 @@
 
 .team-card {
     text-align: center;
+    padding-top: 0px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin-bottom: 0px !important;
+.team-name {
+    font-weight: 600;
+    padding: 0px !important;
+}
+
+.team-role {
+    padding: 0.3vw;
+    color: #b7b7b7 !important;
+}
+
+.team-mail {
+    padding: 0px !important;
+}
+
+h2, h3, h4, h5, h6, p {
+    margin: 0px !important;
 }
 
 @media only screen and (max-width: 768px) {
+
+    .container {
+        margin-bottom: 10vw;
+    }
+
     .sections-page-title {
         text-align: center;
         font-size: 10vw;
@@ -46,4 +66,6 @@ h1, h2, h3, h4, h5, h6, p {
         font-size: 5vw;
         margin-bottom: 0px !important;
     }
+
+
 }

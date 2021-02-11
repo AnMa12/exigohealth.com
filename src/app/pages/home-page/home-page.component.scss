@@ -11,7 +11,7 @@
     }
 
     .laptop-dashboard-photo {
-        max-width: 42vw;
+        max-width: 45vw;
         right: 9vw;
         top: 14vw;
         position: absolute;
@@ -22,34 +22,34 @@
         font-weight: 600;
     }
 
-    .laptop-dashboard-photo-center {
+    .exigo-laptop-workout-photo {
         display: none;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .home-page-title {
-        margin-top: 200px;
+        margin-top: 40vh;
         font-size: 13vw;
         margin-bottom: 4px;
     }
 
     .exigo-weight-lifting-photo {
-        max-width: 77vw;
-        right: -14vw;
-        top: -21vw;
+        max-width: 65vh;
+        right: -18vh;
+        top: -20vh;
+        position: absolute;
+    }
+
+    .exigo-laptop-workout-photo {
+        max-width: 65vh;
+        left: -31vw;
+        top: 23vh;
         position: absolute;
     }
 
     .laptop-dashboard-photo {
         display: none;
-    }
-
-    .laptop-dashboard-photo-center {
-        display: block;
-        margin: auto;
-        margin-top: -40px;
-        max-width: 83vw;
     }
 
     h1, h3 {

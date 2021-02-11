@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-benefits-page',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BenefitsPageComponent implements OnInit {
 
-    features_list = [
+    @Input() isOrthosis: boolean;
+
+    features_list_dpt = [
         {
             title: "Faster",
             icon: "E",
@@ -22,13 +24,28 @@ export class BenefitsPageComponent implements OnInit {
             title: "Connected",
             icon: "E",
             content: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh, nullam mollis. Ut justo. Suspendisse potenti."
-        },
-        {
-            title: "Connected",
-            icon: "E",
-            content: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh, nullam mollis. Ut justo. Suspendisse potenti."
-        },
+        }
     ]
+
+    features_list_orthosis = [
+        {
+            title: "Faster",
+            icon: "E",
+            content: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh, nullam mollis. Ut justo. Suspendisse potenti."
+        },
+        {
+            title: "Faster",
+            icon: "E",
+            content: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh, nullam mollis. Ut justo. Suspendisse potenti."
+        },
+        {
+            title: "Connected",
+            icon: "E",
+            content: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh, nullam mollis. Ut justo. Suspendisse potenti."
+        }
+    ]
+
+
 
   constructor() { }
 

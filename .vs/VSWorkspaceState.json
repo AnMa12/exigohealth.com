@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\index",
     "\\src\\app\\pages",
-    "\\src\\app\\pages\\examples",
+    "\\src\\app\\pages\\products-page",
     "\\src\\app\\pages\\team-page",
     "\\src\\app\\pages\\vision-page",
     "\\src\\app\\shared-components",
-    "\\src\\app\\shared-components\\footer"
+    "\\src\\app\\shared-components\\footer",
+    "\\src\\app\\shared-components\\navbar"
   ],
-  "SelectedNode": "\\src\\app\\shared-components\\footer\\footer.component.html",
+  "SelectedNode": "\\src\\app\\pages\\features-page\\features-page.component.html",
   "PreviewInSolutionExplorer": false
 }

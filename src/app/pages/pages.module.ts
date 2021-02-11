@@ -30,6 +30,7 @@ import { ProductsPageComponent } from './products-page/products-page.component';
 import { FeaturesPageComponent } from './features-page/features-page.component';
 import { BenefitsPageComponent } from './benefits-page/benefits-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -50,7 +51,9 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
     ModalModule.forRoot(), 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ModalModule.forRoot(),
+    FontAwesomeModule
   ],
   declarations: [
     IndexComponent,
