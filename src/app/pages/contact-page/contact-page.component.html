@@ -2,12 +2,12 @@
     <h1 style="margin-bottom:40px" class="sections-page-title">Contact us</h1>
     <div class="card card-plain">
         <div class="card-body">
-            <form>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label> Your Name </label>
-                            <input class="form-control" type="text" value="Mike" />
+                            <input class="form-control" type="text" placeholder="Mike" formControlName="name"/>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -15,7 +15,8 @@
                             <label> Email address </label>
                             <input class="form-control"
                                    placeholder="mike@email.com"
-                                   type="email" />
+                                   type="email" 
+                                   formControlName="email"/>
                         </div>
                     </div>
                 </div>
@@ -25,12 +26,14 @@
                             <label> Message </label>
                             <input class="form-control"
                                    placeholder="Hello there!"
-                                   type="text" />
+                                   type="text" 
+                                   formControlName="message"/>
                         </div>
                     </div>
                 </div>
                 <button style="color:white !important"
                         class="exigo-btn btn btn-danger btn-round float-right"
+                        [disabled]="form.invalid"
                         placement="right"
                         type="submit">
                     Send text
@@ -39,3 +42,4 @@
         </div>
     </div>
 </div>
+

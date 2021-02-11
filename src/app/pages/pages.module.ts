@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
@@ -31,6 +31,7 @@ import { FeaturesPageComponent } from './features-page/features-page.component';
 import { BenefitsPageComponent } from './benefits-page/benefits-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -48,7 +49,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     AlertModule.forRoot(),
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(), 
+    ReactiveFormsModule
   ],
   declarations: [
     IndexComponent,
