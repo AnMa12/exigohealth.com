@@ -16,76 +16,6 @@
         max-height: 35vw;
     }
 
-    .product-left-name {
-        position: absolute;
-        z-index: -1000;
-        font-size: 2.5vw;
-        text-align: center;
-        width: 20vw;
-        top: 10vw;
-        left: 2vw;
-        color: white !important;
-        font-family: TruenoFont !important;
-    }
-
-    .div-btn {
-        display: inline-block;
-        border-radius: 70px !important;
-        font-weight: 400;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        border: 1px solid transparent;
-        padding: 11px 40px;
-        font-size: 0.875rem;
-        line-height: 1.35em;
-        border-radius: 0.25rem;
-    }
-
-    .product-right-name {
-        position: absolute;
-        z-index: -1000;
-        font-size: 2.5vw;
-        text-align: center;
-        width: 20vw;
-        top: 10vw;
-        right: 2vw;
-        color: white !important;
-        font-family: TruenoFont !important;
-    }
-
-    .product-btn {
-        position: absolute;
-        top: 21vw;
-    }
-
-    .product-right-btn-white {
-        color: #008d8d !important;
-        background: white !important;
-        right: 5.5vw;
-    }
-
-    .product-right-btn-green {
-        color: white !important;
-        background: transparent !important;
-        right: 3.5vw;
-    }
-
-    .product-left-btn-white {
-        color: #008d8d !important;
-        background: white !important;
-        left: 5.5vw;
-    }
-
-    .product-left-btn-green {
-        color: white !important;
-        background: transparent !important;
-        left: 3.5vw;
-    }
-
     .sections-page-title {
         text-align: center;
     }
@@ -108,7 +38,7 @@
         text-align: center;
     }
 
-    .small-screens {
+    .small-screen {
         display: none;
     }
 }
@@ -131,7 +61,7 @@
         position: absolute;
     }
 
-    .big-screens {
+    .big-screen {
         display: none;
     }
 
@@ -144,9 +74,9 @@
     }
 
     .page-header {
-        height: 75vh;
-        min-height: 75vh;
-        max-height: 75vh;
+        height: 350vh !important;
+        min-height: 350vh !important;
+        max-height: 350vh !important;
     }
 }
 

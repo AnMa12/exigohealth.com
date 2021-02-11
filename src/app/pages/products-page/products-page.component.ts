@@ -7,15 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductsPageComponent implements OnInit {
 
-    isOrthosis = false;
-
     constructor() { }
 
     ngOnInit(): void {
 
     }
 
-    change_product() {
-        this.isOrthosis = !this.isOrthosis;
-    }
 }

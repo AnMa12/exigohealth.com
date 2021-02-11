@@ -2,3 +2,25 @@ p {
     color: #b7b7b7 !important;
 }
 
+.card {
+    margin-bottom: 6vh !important;
+}
+
+
+
+.product-info-card {
+    background: #008d8d !important;
+
+    card-body {
+        height: 32vh;
+        font-size: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.3vh;
+    }
+
+    p {
+        color: white !important;
+    }
+}

@@ -43,19 +43,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .quote {
-    margin-top: -35px;
-    width: 80px;
-    height: 80px;
-    display: inline-block;
-    margin-left: 18vw;
-    margin-bottom: -2.5vw;
-    margin-right: 23px;
+    margin-top: -4vh;
+    width: 10vh;
+    height: 10vh;
     background: #008d8d;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 30px;
-    line-height: 70px;
+    border-radius: 100%;
+    line-height: 8.5vh;
     text-align: center;
+    margin-left: 14vw;
 
     .fav-icon {
         color: white !important;
@@ -96,4 +91,8 @@ h1, h2, h3, h4, h5, h6 {
     .container {
     max-width: 79vw !important;
     }
+}
+
+.card {
+    height: 30vh;
 }

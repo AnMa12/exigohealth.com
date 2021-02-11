@@ -1,50 +1,29 @@
 <div class="page-header" id="products">
-    <div class="container">
-        <div class="big-screens">
-            <img *ngIf="!isOrthosis" class="product-image product-left-image" src="../assets/img/product-1-white.png">
-            <img *ngIf="!isOrthosis" class="product-image product-right-image" src="../assets/img/product-2.png">
-
-            <img *ngIf="isOrthosis" class="product-image product-left-image" src="../assets/img/product-1.png" />
-            <img *ngIf="isOrthosis" class="product-image product-right-image" src="../assets/img/product-2-white.png">
-
-            <h3 class="product-left-name">Meet your digital physical therapist</h3>
-            <h3 class="product-right-name">Meet your motorized orhtosis</h3>
-
-            <div *ngIf="!isOrthosis" class="div-btn product-btn product-left-btn-green">
-                Scroll to see the features
+    <div class="container big-screen">
+        <h1 class="sections-page-title">Products</h1>
+        <div class="row">
+            <div class="col-5">
+                <img class="left-product" src="../assets/img/dpt-green.png">
             </div>
-            <button *ngIf="!isOrthosis" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-right-btn-white"
-                    (click)="change_product()">
-                Click for details
-            </button>
-
-            <button *ngIf="isOrthosis" class="exigo-btn btn product-btn btn-danger btn-round product-btn product-left-btn-white"
-                    (click)="change_product()">
-                Click for details
-            </button>
-            <div *ngIf="isOrthosis" class="div-btn product-btn product-right-btn-green">
-                Scroll to see the features
+            <div class="col-7">
+                <app-features-page [productName]="'digitalPT'"></app-features-page>
             </div>
         </div>
-
-        <div class="product-text">
-            <h1 class="sections-page-title">Products</h1>
-            <h3 class="product-description">
-                Our software solution is a digital physical therapist assistant that motivates you to do the recovery exercises using interactive games.
-            </h3>
-            <h3 class="product-description">
-                Our hardware solution is a smart, portable, orthosis which allows patients to continue their exercises at home, especially useful during a pandemic.
-            </h3>
+        <br> <br> <br>
+        <div class="row">
+            <div class="col-7">
+                <app-features-page [productName]="'motorizedOrthosis'"></app-features-page>
+            </div>
+            <div class="col-5">
+                <img class="rigth-product" src="../assets/img/orthosis-green.png">
+            </div>
         </div>
-
-        <div class="small-screens">
-            <img *ngIf="!isOrthosis" class="product-image product-left-image" src="../assets/img/dpt-white.png">
-            <img *ngIf="!isOrthosis" class="product-image product-right-image" src="../assets/img/orthosis-green.png" (click)="change_product()">
- 
-            <img *ngIf="isOrthosis" class="product-image product-left-image" src="../assets/img/dpt-green.png" (click)="change_product()"/>
-            <img *ngIf="isOrthosis" class="product-image product-right-image" src="../assets/img/orthosis-white.png">
-        </div>
+    </div>    
+    <div class="container small-screen">
+        <h1 class="sections-page-title">Products</h1>
+        <img class="left-product" src="../assets/img/dpt-green.png">
+        <app-features-page [productName]="'digitalPT'"></app-features-page>
+        <img class="rigth-product" src="../assets/img/orthosis-green.png">
+        <app-features-page [productName]="'motorizedOrthosis'"></app-features-page>
     </div>
 </div>
-<app-features-page [isOrthosis]="isOrthosis"></app-features-page>
-<!--<app-benefits-page [isOrthosis]="isOrthosis"></app-benefits-page>-->
