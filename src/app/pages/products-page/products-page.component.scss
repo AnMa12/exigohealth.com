@@ -1,37 +1,31 @@
 @media only screen and (min-width: 769px) {
-
-    .product-description {
-        text-align: center;
+    .pta-description {
+        font-size: 2.4vh;
     }
 
     .product-image {
-        max-width: 48vw !important;
+        margin-top: 1vw;
+        max-width: 54vw !important;
         position: absolute;
         z-index: -9999;
     }
 
     .page-header {
-        height: 35vw !important;
-        min-height: 35vw;
-        max-height: 35vw;
+        height: 86vw !important;
+        min-height: 86vw;
+        max-height: 86vw;
     }
 
     .sections-page-title {
         text-align: center;
     }
 
-    .product-text {
-        display: block;
-        margin: auto;
-        width: 40vw;
-    }
-
     .product-left-image {
-        left: -18vw;
+        left: -23vw;
     }
 
     .product-right-image {
-        right: -18vw;
+        right: -23vw;
     }
 
     .product-tile {
@@ -41,13 +35,50 @@
     .small-screen {
         display: none;
     }
+
+    .feature-card {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .quote {
+        margin-top: -4vh;
+        width: 10vh;
+        height: 10vh;
+        background: #008d8d;
+        border-radius: 100%;
+        line-height: 8.5vh;
+        text-align: center;
+        margin-left: 14vw;
+    
+        .fav-icon {
+            color: white !important;
+            padding-top: 1vh;
+            font-size: 2vw;
+            display: block;
+        }
+    }
+    
+    .card {
+        background: white !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-
     .container {
         padding: 5vw;
         margin-top: 3vw;
+    }
+
+    .left-product {
+        left: -35vw;
+        position: absolute;
+    }
+
+    .rigth-product {
+        right: -35vw;
+        position: absolute;
     }
 
     h3 {
@@ -57,7 +88,7 @@
     }
 
     .product-image {
-        max-width: 41vh !important;
+        max-width: 59vh !important;
         position: absolute;
     }
 
@@ -74,9 +105,9 @@
     }
 
     .page-header {
-        height: 350vh !important;
-        min-height: 350vh !important;
-        max-height: 350vh !important;
+        height: 410vh !important;
+        min-height: 410vh !important;
+        max-height: 410vh !important;
     }
 }
 

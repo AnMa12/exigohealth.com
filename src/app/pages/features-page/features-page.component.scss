@@ -7,6 +7,13 @@ p {
 }
 
 
+.pta-description {
+    font-size: 2.4vh;
+}
+
+.orthosis-description {
+    font-size: 2.9vh;
+}
 
 .product-info-card {
     background: #008d8d !important;
@@ -22,5 +29,45 @@ p {
 
     p {
         color: white !important;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    h2 {
+        font-size: 3vh;
+        margin-top: -2.3vh;
+    }
+
+
+    .pta-description {
+        font-size: 2.2vh;
+    }
+    
+    .orthosis-description {
+        font-size: 2.6vh;
+    }
+
+    .quote {
+        margin-top: -4vh !important;
+        width: 8vh !important;
+        height: 8vh !important;
+        background: #008d8d !important;
+        border-radius: 100% !important;
+        line-height: 7.5vh !important;
+        text-align: center !important;
+        margin-left: 54vw !important;
+
+        .fav-icon {
+            color: white !important;
+            padding-top: 0.4vh !important;
+            font-size: 5vw !important;
+            display: block !important;
+        }
+    }
+
+    .card {
+        height: 33vh !important;
     }
 }
