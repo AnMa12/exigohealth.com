@@ -1,4 +1,5 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { faDiceD20, faRunning, faCommentMedical } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-features-page',
@@ -8,29 +9,23 @@ import { Component, OnInit, Input} from '@angular/core';
 export class FeaturesPageComponent implements OnInit {
 
     @Input() isOrthosis: boolean;
-  
+
   features_list_dpt = [
       {
           title: "Engaging sessions",
-          icon: "E",
-          content: `It's hard to be long-term committed especially when it comes to physical effort. 
-                    With our games, you will forget about the painful part of the exercises and engage in fun 
-                    and concrete tasks that will help you complete the recovery session.`
+          icon: faDiceD20,
+          content: `Forget about the painful part of the exercises and engage the tasks in fun and concrete ways to complete the recovery session with the interactive games.`
       },
       {
           title: "Real time tracking",
-          icon: "E",
-          content: `Using only a camera and our A.I. powered motion tracking technology you 
-                    receive real time feedback on the performed exercises so you can be sure that the 
-                    rehabilitation process is done right and you can see your daily progress.`
+          icon: faRunning,
+          content: `Receive real time feedback on your performance with the AI powered motion tracking technology, making sure that the rehabilitation process is done right.`
 
       },
       {
           title: "Medical expertise",
-          icon: "E",
-          content: `The rehabilitation process involves the identification of a person's problems and needs. 
-                    That's why with our platform you can message or schedule a video call to your physical 
-                    therapist anytime a question raises.`
+          icon: faCommentMedical,
+          content: `Communicate directly with your physical therapist every time you need it by leaving a message or starting a video call directly from your account.`
       }
     ]
 

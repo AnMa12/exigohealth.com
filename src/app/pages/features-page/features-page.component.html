@@ -3,6 +3,9 @@
     <div *ngIf="!isOrthosis" class="row">
         <div *ngFor="let feature of features_list_dpt" class="col-md-4 col-sm-12 col-xs-12">
             <div class="card border-card">
+                <span class="quote">
+                    <fa-icon class="fav-icon" [icon]="feature.icon"></fa-icon>
+                </span>
                 <div class="card-body">
                     <h2 class="card-title">{{feature.title}}</h2>
                     <p class="card-title">{{feature.content}}</p>
