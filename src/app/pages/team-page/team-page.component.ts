@@ -12,19 +12,19 @@ export class TeamPageComponent implements OnInit {
             image: "../assets/img/team-ana.png",
             name: "Ana-Maria Melinte",
             role: "CEO",
-            mail: "anma.melinte@gmail.com"
+            mail: "anamaria.melinte@exigohealth.com"
         },
         {
             image: "../assets/img/team-irina.png",
             name: "Irina Sargu",
             role: "COO",
-            mail: "irina.s.sargu@gmail.com"
+            mail: "irina.sargu@exigohealth.com"
         },
         {
             image: "../assets/img/team-ioana.png",
             name: "Ioana Ciripan",
             role: "CTO",
-            mail: "ioanarciripan@gmail.com"
+            mail: "ioana.ciripan@exigohealth.com"
         },
     ]
 
