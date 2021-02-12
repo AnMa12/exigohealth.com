@@ -1,76 +1,112 @@
-p {
-    color: #b7b7b7 !important;
+.quote {
+    margin-top: -4vh;
+    width: 10vh;
+    height: 10vh;
+    background: #008d8d;
+    border-radius: 100%;
+    line-height: 8.5vh;
+    text-align: center;
+    margin-left: 14vw;
+
+    .fav-icon {
+        color: white !important;
+        padding-top: 1vh;
+        font-size: 2vw;
+        display: block;
+    }
 }
 
 .card {
-    margin-bottom: 6vh !important;
-}
-
-
-.pta-description {
-    font-size: 2.4vh;
-}
-
-.orthosis-description {
-    font-size: 2.9vh;
-}
-
-.product-info-card {
-    background: #008d8d !important;
-
-    card-body {
-        height: 32vh;
-        font-size: 5vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2.3vh;
-    }
+    background: white !important;
+    border-radius: 18px !important;
+    border: 1px #008d8d solid !important;
 
     p {
-        color: white !important;
+        color: gray;
     }
 }
 
-h2 {
-    margin-top: -2vh !important;
-}
 
 @media only screen and (max-width: 768px) {
 
-    h2 {
-        font-size: 3vh;
-        margin-top: -2.3vh;
-    }
 
-
-    .pta-description {
-        font-size: 2.2vh;
-    }
-    
-    .orthosis-description {
-        font-size: 2.6vh;
-    }
-
-    .quote {
-        margin-top: -4vh !important;
-        width: 8vh !important;
-        height: 8vh !important;
-        background: #008d8d !important;
-        border-radius: 100% !important;
-        line-height: 7.5vh !important;
-        text-align: center !important;
-        margin-left: 54vw !important;
-
-        .fav-icon {
-            color: white !important;
-            padding-top: 0.4vh !important;
-            font-size: 5vw !important;
-            display: block !important;
-        }
-    }
-
-    .card {
-        height: 33vh !important;
-    }
 }
+
+
+
+// p {
+//     color: #b7b7b7 !important;
+// }
+
+// .card {
+//     margin-bottom: 6vh !important;
+// }
+
+
+// .pta-description {
+//     font-size: 2.4vh;
+// }
+
+// .orthosis-description {
+//     font-size: 2.9vh;
+// }
+
+// .product-info-card {
+//     background: #008d8d !important;
+
+//     card-body {
+//         height: 32vh;
+//         font-size: 5vh;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         font-size: 2.3vh;
+//     }
+
+//     p {
+//         color: white !important;
+//     }
+// }
+
+// h2 {
+//     margin-top: -2vh !important;
+// }
+
+// @media only screen and (max-width: 768px) {
+
+//     h2 {
+//         font-size: 3vh;
+//         margin-top: -2.3vh;
+//     }
+
+
+//     .pta-description {
+//         font-size: 2.2vh;
+//     }
+    
+//     .orthosis-description {
+//         font-size: 2.6vh;
+//     }
+
+//     .quote {
+//         margin-top: -4vh !important;
+//         width: 8vh !important;
+//         height: 8vh !important;
+//         background: #008d8d !important;
+//         border-radius: 100% !important;
+//         line-height: 7.5vh !important;
+//         text-align: center !important;
+//         margin-left: 54vw !important;
+
+//         .fav-icon {
+//             color: white !important;
+//             padding-top: 0.4vh !important;
+//             font-size: 5vw !important;
+//             display: block !important;
+//         }
+//     }
+
+//     .card {
+//         height: 33vh !important;
+//     }
+// }

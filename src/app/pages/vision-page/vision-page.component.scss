@@ -1,8 +1,4 @@
 @media only screen and (min-width: 769px) {
-    .container {
-        height: 32vw;
-    }
-
     .sections-page-title {
         margin-top: 9vw;
         text-align: right;
@@ -14,8 +10,8 @@
 
     .exigo-laptop-workout-photo {
         max-width: 66vw;
-        right: 54vw;
-        top: -10vw;
+        left: -34vw;
+        top: 1vw;
         position: absolute;
         z-index: -9999;
     }
@@ -35,12 +31,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-    .container {
-        height: 77vw;
-        padding: 5vw;
-    }
-
     h3 {
         font-size: 4vw;
         text-align: center !important;
@@ -48,10 +38,6 @@
     }
 
     .exigo-laptop-workout-photo {
-        /* max-width: 66vw;
-        right: 57vw;
-        top: -1vw;
-        z-index: -9999;*/
         display: none;
     }
 

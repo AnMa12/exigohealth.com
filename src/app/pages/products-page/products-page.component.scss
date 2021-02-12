@@ -1,45 +1,22 @@
 @media only screen and (min-width: 769px) {
-    .pta-description {
-        font-size: 2.4vh;
-    }
-
-    .product-image {
-        margin-top: 1vw;
-        max-width: 54vw !important;
-        position: absolute;
-        z-index: -9999;
-    }
-
-    .page-header {
-        height: 86vw !important;
-        min-height: 86vw;
-        max-height: 86vw;
-    }
-
-    .sections-page-title {
+    .product-tile, .sections-page-title {
         text-align: center;
     }
 
     .product-left-image {
-        left: -23vw;
+        left: -11vw;
     }
 
     .product-right-image {
-        right: -23vw;
-    }
-
-    .product-tile {
-        text-align: center;
+        right: -11vw;
     }
 
     .small-screen {
         display: none;
     }
 
-    .feature-card {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+    .image-container {
+        text-align: center;
     }
     
     .quote {
@@ -66,21 +43,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
-        padding: 5vw;
-        margin-top: 3vw;
-    }
-
-    .left-product {
-        left: -35vw;
-        position: absolute;
-    }
-
-    .rigth-product {
-        right: -35vw;
-        position: absolute;
-    }
-
     h3 {
         font-size: 4vw;
         text-align: center !important;
@@ -88,8 +50,8 @@
     }
 
     .product-image {
-        max-width: 59vh !important;
-        position: absolute;
+        max-width: 45vh !important;
+        margin-bottom: 5vh;
     }
 
     .big-screen {
@@ -104,10 +66,8 @@
         right: -16vh;
     }
 
-    .page-header {
-        height: 410vh !important;
-        min-height: 410vh !important;
-        max-height: 410vh !important;
+    .small-screen {
+        text-align: center;
     }
 }
 

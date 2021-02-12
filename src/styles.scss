@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #008d8d !important;
 }
 
-
 .text-align {
     margin-top: 250px;
     margin-left: -40px;
@@ -35,41 +34,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: TruenoFont !important;
 }
 
-/* FEATURES AND BENEFITS STYLE */
-
-.feature-card {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.quote {
-    margin-top: -4vh;
-    width: 10vh;
-    height: 10vh;
-    background: #008d8d;
-    border-radius: 100%;
-    line-height: 8.5vh;
-    text-align: center;
-    margin-left: 14vw;
-
-    .fav-icon {
-        color: white !important;
-        padding-top: 1vh;
-        font-size: 2vw;
-        display: block;
-    }
-}
-
-.card {
-    background: white !important;
-}
-
-.border-card {
-    border-radius: 18px !important;
-    border: 1px #008d8d solid !important;
-}
-
 @media only screen and (max-width: 768px) {
     .sections-page-title {
         text-align: center !important;
@@ -87,27 +51,3 @@ h1, h2, h3, h4, h5, h6 {
         margin: 50px 0px 35px 0px !important;
     }
 }
-
-@media (min-width: 1200px) {
-    .container {
-    max-width: 79vw !important;
-    }
-}
-
-.card {
-    height: 30vh;
-}
-
-/* FONT SIZES */
-
-// h1 {
-//     font-size: 4vw !important;
-// }
-
-// h2 {
-//     font-size: 3vw !important;
-// }
-
-// h3 {
-//     font-size: 1.5vw !important;
-// }
