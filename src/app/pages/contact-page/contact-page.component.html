@@ -1,48 +1,43 @@
 <div class="container" id="contact">
     <h1 style="margin-bottom:40px" class="sections-page-title">Contact us</h1>
-    <p>Want to get in touch but not sure where to start? Leave a message using our 
-        contact form or email us directly as contact@exigohealth.com and we'll get 
-        back to you as soon as possible</p>
-    <div class="card card-plain">
-        <div class="card-body">
-            <form [formGroup]="form" (ngSubmit)="onSubmit()">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label> Your Name </label>
-                            <input class="form-control" type="text" placeholder="Mike" formControlName="name"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label> Email address </label>
-                            <input class="form-control"
-                                   placeholder="mike@email.com"
-                                   type="email" 
-                                   formControlName="email"/>
-                        </div>
-                    </div>
+    <h4>Want to get in touch but not sure where to start? Leave a message using our 
+        contact form we'll get back to you as soon as possible</h4>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label> Your Name </label>
+                    <input class="form-control" type="text" placeholder="Mike" formControlName="name"/>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label> Message </label>
-                            <input class="form-control"
-                                   placeholder="Hello there!"
-                                   type="text" 
-                                   formControlName="message"/>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label> Email address </label>
+                    <input class="form-control"
+                            placeholder="mike@email.com"
+                            type="email" 
+                            formControlName="email"/>
                 </div>
-                <button style="color:white !important"
-                        class="exigo-btn btn btn-danger btn-round float-right"
-                        [disabled]="form.invalid"
-                        placement="right"
-                        type="submit">
-                    Send text
-                </button>
-            </form>
+            </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label> Message </label>
+                    <input class="form-control"
+                            placeholder="Hello there!"
+                            type="text" 
+                            formControlName="message"/>
+                </div>
+            </div>
+        </div>
+        <button style="color:white !important"
+                class="exigo-btn btn btn-danger btn-round float-right"
+                [disabled]="form.invalid"
+                placement="right"
+                type="submit">
+            Send text
+        </button>
+    </form>
 </div>
 

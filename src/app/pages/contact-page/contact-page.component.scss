@@ -6,3 +6,26 @@
     border-color: #008d8d;
 }
 
+h4 {
+    color: #008d8d !important;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+}
+
+input {
+    color: rgb(48, 48, 48) !important;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        height: 80vh;
+    }
+
+}
