@@ -37,17 +37,11 @@ export class ContactPageComponent implements OnInit {
       try {
           this.af.collection('guests').add(formRequest).then(result => {
               alert("Thank you for your message!")
-              console.log("It worked")
-              console.log(result)
           }).catch(error => {
               alert("Something went wrong please try again")
-              console.log("It didn't work :(")
-              console.log(error)
           })
       } catch (error) {
           alert("Something went wrong please try again")
-          console.log("It didn't work :(")
-          console.log(error)
       }
 
     this.form.reset();
