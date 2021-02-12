@@ -16,29 +16,45 @@ export class ContactPageComponent implements OnInit {
   }
 
   createForm() {
-    this.form = this.fb.group({
-      name: ['', Validators.required],
-      email: ['', Validators.required],
-      message: ['', Validators.required],
+      this.form = this.fb.group({
+        firstName: ['', Validators.required],
+        lastName: ['', Validators.required],
+        email: ['', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$"), Validators.email]],
+        message: ['', Validators.required],
     });
   }
 
   onSubmit() {
-    const {name, email, message} = this.form.value;
+    const {firstName, lastName, email, message} = this.form.value;
     const date = Date();
     const html = `
-      <div>From: ${name}</div>
+      <div>From: ${firstName} ${lastName}</div>
       <div>Email: <a href="mailto:${email}">${email}</a></div>
       <div>Date: ${date}</div>
       <div>Message: ${message}</div>
     `;
-    let formRequest = { name, email, message, date, html };
-    this.af.collection('guests').add(formRequest);
+    let formRequest = {firstName, lastName, email, message, date, html};
+      try {
+          this.af.collection('guests').add(formRequest).then(result => {
+              alert("Thank you for your message!")
+              console.log("It worked")
+              console.log(result)
+          }).catch(error => {
+              alert("Something went wrong please try again")
+              console.log("It didn't work :(")
+              console.log(error)
+          })
+      } catch (error) {
+          alert("Something went wrong please try again")
+          console.log("It didn't work :(")
+          console.log(error)
+      }
+
     this.form.reset();
-    alert("Thank you for your message!")
   }
 
   ngOnInit(): void {
+    
   }
 
 }

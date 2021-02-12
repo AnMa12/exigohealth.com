@@ -4,37 +4,69 @@
         contact form and we'll get back to you as soon as possible</h4>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
-                    <label> Your Name </label>
-                    <input class="form-control" type="text" placeholder="Mike" formControlName="name"/>
+                    <label> First Name </label>
+                    <input class="form-control" type="text" placeholder="Mike" formControlName="firstName"/>
+                </div>
+                <div *ngIf="form.controls['firstName'].invalid && (form.controls['firstName'].dirty || form.controls['firstName'].touched)"
+                     class="error">
+                    <div *ngIf="form.controls['firstName'].errors.required">
+                    <p>Please enter your first name</p>
+                  </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
-                    <label> Email address </label>
+                    <label> Last Name </label>
+                    <input class="form-control" type="text" placeholder="Popescu" formControlName="lastName"/>
+                </div>
+                <div *ngIf="form.controls['lastName'].invalid && (form.controls['lastName'].dirty || form.controls['lastName'].touched)"
+                     class="error">
+                    <div *ngIf="form.controls['lastName'].errors.required">
+                    <p>Please enter your last name</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label > Email address </label>
                     <input class="form-control"
                             placeholder="mike@email.com"
                             type="email" 
                             formControlName="email"/>
                 </div>
+                <div *ngIf="form.controls['email'].invalid && (form.controls['email'].dirty || form.controls['email'].touched)"
+                    class="error">
+                    <div *ngIf="form.controls['email'].errors.required">
+                        <p>Please enter your email</p>
+                      </div>
+                <div *ngIf="form.controls['email'].errors.email">
+                    <p>The entered email is not valid</p>
+                </div>
+           </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label> Message </label>
+                    <label > Message </label>
                     <input class="form-control"
                             placeholder="Hello there!"
                             type="text" 
                             formControlName="message"/>
                 </div>
+                <div *ngIf="form.controls['message'].invalid && (form.controls['message'].dirty || form.controls['message'].touched)"
+                class="error">
+                <div *ngIf="form.controls['message'].errors.required">
+                    <p>Please enter your message</p>
+                  </div>
+                  </div>
             </div>
         </div>
         <button style="color:white !important"
-                class="exigo-btn btn btn-danger btn-round float-right"
-                [disabled]="form.invalid"
-                placement="right"
+                class="exigo-btn btn btn-danger btn-round pull-right"
+                [disabled]="!form.valid"
                 type="submit">
             Send text
         </button>

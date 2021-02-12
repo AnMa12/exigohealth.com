@@ -6,26 +6,46 @@
     border-color: #008d8d;
 }
 
+.container {
+    margin-bottom: 15vh;
+}
+
+* {
+    color: rgb(48, 48, 48) !important;
+}
+
 h4 {
+    padding-top: 3vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+h1, h4 {
     color: #008d8d !important;
     text-align: center;
 }
 
-.container {
-    height: 70vh;
+label {
+    color: black !important;
 }
 
-input {
-    color: rgb(48, 48, 48) !important;
+p {
+    color: rgb(189, 45, 45) !important;
+    margin-bottom: 1vh;
 }
 
+.row {
+    margin-bottom: 2vh;
+}
 
-
+form {
+    padding-top: 3vh;
+    padding-left: 11vw;
+    padding-right: 11vw;
+}
 
 @media only screen and (max-width: 768px) {
-
     .container {
-        height: 80vh;
+        margin-bottom: 15vh;
     }
-
 }
