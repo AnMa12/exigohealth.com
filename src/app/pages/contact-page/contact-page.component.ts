@@ -35,7 +35,7 @@ export class ContactPageComponent implements OnInit {
     `;
     let formRequest = {firstName, lastName, email, message, date, html};
       try {
-          this.af.collection('guests').add(formRequest).then(result => {
+          this.af.collection('messages').add(formRequest).then(result => {
               alert("Thank you for your message!")
           }).catch(error => {
               alert("Something went wrong please try again")
