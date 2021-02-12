@@ -17,9 +17,9 @@ function getDegAngle(x0, y0, x1, y1) {
 }
 
 // some constants
-const DECAY = 4; // confetti decay in seconds
-const SPREAD = 60; // degrees to spread from the angle of the cannon
-const GRAVITY = 1200;
+const DECAY = 2; // confetti decay in seconds
+const SPREAD = 100; // degrees to spread from the angle of the cannon
+const GRAVITY = 200;
 
 export class ConfettiCannon {
   constructor(videoWidth, videoHeight) {
@@ -74,17 +74,13 @@ export class ConfettiCannon {
 
     const particles = length / 5 + 5;
     const velocity = length * 10;
-    this.addConfettiParticles(particles, angle, velocity, x0, y0);
+    // this.addConfettiParticles(particles, angle, velocity, x0, y0);
+    this.addConfettiParticles(5, 230, 280, x0, y0);
   }
 
   setupListeners() {
     // Use TweenLite tick event for the render loop
     TweenLite.ticker.addEventListener('tick', this.render);
-
-    // bind events
-    // window.addEventListener('mousedown', this.handleMousedown);
-    // window.addEventListener('mouseup', this.handleMouseup);
-    // window.addEventListener('resize', this.setCanvasSize);
   }
 
   setCanvasSize(videoWidth, videoHeight) {
@@ -102,11 +98,6 @@ export class ConfettiCannon {
       this.canvas.width = displayWidth;
       this.canvas.height = displayHeight;
     }
-
-    // this.canvas.width = window.innerWidth * this.dpr;
-    // this.canvas.height = window.innerHeight * this.dpr;
-    // this.canvas.style.width = window.innerWidth + 'px';
-    // this.canvas.style.height = window.innerHeight + 'px';
   }
 
   handleMousedown(event) {
@@ -118,24 +109,7 @@ export class ConfettiCannon {
       x,
       y,
     };
-    // this.drawVector = true;
   }
-
-  //   handleMouseup(event) {
-  //     // this.drawVector = false;
-
-  //     const x0 = this.vector[0].x;
-  //     const y0 = this.vector[0].y;
-  //     const x1 = this.vector[1].x;
-  //     const y1 = this.vector[1].y;
-
-  //     const length = getLength(x0, y0, x1, y1);
-  //     const angle = getDegAngle(x0, y0, x1, y1) + 180;
-
-  //     const particles = length / 5 + 5;
-  //     const velocity = length * 10;
-  //     this.addConfettiParticles(particles, angle, velocity, x0, y0);
-  //   }
 
   addConfettiParticles(amount, angle, velocity, x, y) {
     let i = 0;

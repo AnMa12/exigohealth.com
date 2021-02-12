@@ -25,7 +25,8 @@ let context;
 let pointX;
 let pointY;
 let confetti;
-let score = 0;
+let gameScore = 0;
+let gameScoreHTML;
 navigator.getUserMedia =
   navigator.getUserMedia ||
   navigator.webkitGetUserMedia ||
@@ -71,18 +72,28 @@ async function loadVideo() {
   return video;
 }
 
-const defaultQuantBytes = 2;
+// Controls the bytes used for weight quantization
+// lower value leads to lower accuracy
+const defaultQuantBytes = 2; // 4, 2, 1 bytes
 
-const defaultMobileNetMultiplier = isMobile() ? 0.5 : 0.75;
+/**** MobileNetV1 ****/
+// Set this to a smaller value to increase speed at the cost of accuracy.
+const defaultMobileNetMultiplier = isMobile() ? 0.5 : 0.75; //1.0, 0.75, or 0.50
+// Output stride of the PoseNet model. The smaller the value,
+// the larger the output resolution, and more accurate the model at the cost of speed.
+// using stride 32 you must set the multiplier to 1.0
 const defaultMobileNetStride = 16;
+
+// Set this to a smaller value to increase speed at the cost of accuracy
 const defaultMobileNetInputResolution = 500;
 
+/**** ResNet50 ****/
 const defaultResNetMultiplier = 1.0;
 const defaultResNetStride = 32;
 const defaultResNetInputResolution = 250;
 
 const guiState = {
-  algorithm: 'multi-pose',
+  algorithm: 'single-pose',
   input: {
     architecture: 'MobileNetV1',
     outputStride: defaultMobileNetStride,
@@ -91,7 +102,7 @@ const guiState = {
     quantBytes: defaultQuantBytes,
   },
   singlePoseDetection: {
-    minPoseConfidence: 0.1,
+    minPoseConfidence: 0.2,
     minPartConfidence: 0.5,
   },
   multiPoseDetection: {
@@ -474,21 +485,27 @@ function detectPoseInRealTime(video, net) {
         // console.log(keypoints);
         if (keypoints && keypoints.length && pointX && pointY) {
           const rightHand = keypoints.find((f) => f.part === 'rightWrist');
-          //   console.log(rightHand);
-          const a = rightHand.position.x;
-          const b = rightHand.position.y;
-
-          if (checkHit(a, b, pointX, pointY, rad)) {
-            context.fillStyle = '#C6197F';
-            context.fill();
-            confetti.setCoordinates(a, b, a + 100, b + 100);
-            score = 100 + score;
-            drawBubble();
-          } else {
-            context.fillStyle = '#8ED6FF';
-            context.fill();
+          const leftHand = keypoints.find((f) => f.part === 'leftWrist');
+          const rightElbow = keypoints.find((f) => f.part === 'rightElbow');
+          const leftElbow = keypoints.find((f) => f.part === 'leftElbow');
+          if (rightHand.score > 0.5 && rightElbow.score > 0.5) {
+            handleHand(
+              rightElbow.position.x,
+              rightElbow.position.y,
+              rightHand.position.x,
+              rightHand.position.y,
+              ctx
+            );
           }
-          // console.warn('Check hit ==', checkHit(a, b, pointX, pointY, rad));
+          if (leftHand.score > 0.5 && leftElbow.score > 0.5) {
+            handleHand(
+              leftElbow.position.x,
+              leftElbow.position.y,
+              leftHand.position.x,
+              leftHand.position.y,
+              ctx
+            );
+          }
         }
         if (guiState.output.showPoints) {
           drawKeypoints(keypoints, minPartConfidence, ctx);
@@ -509,6 +526,57 @@ function detectPoseInRealTime(video, net) {
   }
 
   poseDetectionFrame();
+}
+
+function handleHand(x1, y1, x2, y2, ctx) {
+  const [a, b] = getHandCenterCoordinates(x1, y1, x2, y2);
+  ctx.beginPath();
+  ctx.arc(a, b, 10, 0, 2 * Math.PI);
+  ctx.fillStyle = '#C6197F';
+  ctx.fill();
+
+  if (checkHit(a, b, pointX, pointY, rad)) {
+    context.fillStyle = '#C6197F';
+    context.fill();
+    confetti.setCoordinates(a, b, a + 100, b + 100);
+    gameScore = 100 + gameScore;
+    gameScoreHTML.innerHTML = 'Score: ' + gameScore;
+    drawBubble();
+  }
+}
+
+function getHandCenterCoordinates(x1, y1, x2, y2) {
+  let xlen = x2 >= x1 ? x2 - x1 : x1 - x2;
+  let ylen = y2 >= y1 ? y2 - y1 : y1 - y2;
+
+  // Determine hypotenuse length
+  let hlen = Math.sqrt(Math.pow(xlen, 2) + Math.pow(ylen, 2));
+
+  // The variable identifying the length of the `shortened` line.
+  // In this case 50 units.
+  let smallerLen = Math.floor(xlen / 2);
+
+  // Determine the ratio between they shortened value and the full hypotenuse.
+  let ratio = smallerLen / hlen;
+
+  let smallerXLen = xlen * ratio;
+  let smallerYLen = ylen * ratio;
+
+  if (smallerXLen < 5) {
+    smallerYLen = ylen * 0.25;
+  }
+
+  if (smallerYLen < 5) {
+    smallerXLen = xlen * 0.25;
+  }
+
+  // The new X point is the starting x plus the smaller x length.
+  let xx = x2 >= x1 ? x2 + smallerXLen : x2 - smallerXLen;
+
+  // Same goes for the new Y.
+  let yy = y2 >= y1 ? y2 + smallerYLen : y2 - smallerYLen;
+
+  return [xx, yy];
 }
 
 /***
@@ -591,6 +659,7 @@ export async function bindPage() {
   canvas = document.getElementById('animation');
   context = canvas.getContext('2d');
   confetti = new ConfettiCannon(videoWidth, videoHeight);
+  gameScoreHTML = document.getElementById('gameScore');
   setupGui([], net);
   setupFPS();
   detectPoseInRealTime(video, net);

@@ -1,9 +1,16 @@
 .telekineto {
+  .score {
+    margin-left: 7rem;
+    margin-top: 5rem;
+    h1 {
+      color: black;
+    }
+  }
   .canvas-container {
     position: relative;
     display: flex;
     margin-left: 7rem;
-    margin-top: 7rem;
+    // margin-top: 7rem;
     .animation {
       position: absolute;
       // height: 500px;
