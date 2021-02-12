@@ -22,6 +22,7 @@ export class ContactPageComponent implements OnInit {
       message: ['', Validators.required],
     });
   }
+
   onSubmit() {
     const {name, email, message} = this.form.value;
     const date = Date();
@@ -34,6 +35,7 @@ export class ContactPageComponent implements OnInit {
     let formRequest = { name, email, message, date, html };
     this.af.collection('guests').add(formRequest);
     this.form.reset();
+    alert("Thank you for your message!")
   }
 
   ngOnInit(): void {
