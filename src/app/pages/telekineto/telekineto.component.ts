@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import '@tensorflow/tfjs-backend-webgl';
 import { bindPage, getPoses } from './bind.js';
-import { Target } from './target.js';
 
 @Component({
   selector: 'app-telekineto',
